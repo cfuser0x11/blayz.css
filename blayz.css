@@ -16,10 +16,6 @@ html{/* variables */
         --color-bgray:#111;
         --color-black:#000;
         --color-white:#fff;
-        /* for tasks */
-            /* --color-text:var(--color-bit-white);
-            --color-background:var(--color-bit-blue);
-            --color-wanimated-rgb:244,244,244; */
             
     /* pastel | by: https://lospec.com/palette-list/sulu */
         --color-pastel-red:#ee70b5;
@@ -80,12 +76,15 @@ html{/* variables */
         &[font*="20"]{font-size: 20px}
         &[font*="40"]{font-size: 40px}
         &[font*="60"]{font-size: 60px}
+        &[font*="left"]{text-align:left;}
+        &[font*="right"]{text-align:right;}
+        &[font*="center"]{text-align:center;}
         &[font*="bold"]{font-weight: 800}
         &[font*="medbold"]{font-weight: 600}
         &[font*="default"]{font-weight: 400}
         &[font*="animated"] {font-weight: 400;
-            &[font*="medbold"] {animation: animedbold 1s forwards;}
             &[font*="bold"] {animation: anibold 1s forwards;}
+            &[font*="medbold"] {animation: animedbold 1s forwards;}
         }
 
     /* colors */
@@ -149,6 +148,11 @@ html{/* variables */
         &[size*="fpg"]{height:auto;width:var(--fpg);}
         
         /* margins */
+            &[size*="m"]{margin:var(--r0)}
+            &[size*="mt"]{margin-top:var(--r0)}
+            &[size*="mb"]{margin-bottom:var(--r0)}
+            &[size*="ml"]{margin-left:var(--r0)}
+            &[size*="mr"]{margin-right:var(--r0)}
             &[size*="m1"]{margin:var(--r1)}
             &[size*="mt1"]{margin-top:var(--r1)}
             &[size*="mb1"]{margin-bottom:var(--r1)}
@@ -175,7 +179,12 @@ html{/* variables */
             &[size*="ml5"]{margin-left:var(--r5)}
             &[size*="mr5"]{margin-right:var(--r5)}
         
-            /* paddings */
+        /* paddings */
+            &[size*="p"]{padding:var(--r0)}
+            &[size*="pt"]{padding-top:var(--r0)}
+            &[size*="pb"]{padding-bottom:var(--r0)}
+            &[size*="pl"]{padding-left:var(--r0)}
+            &[size*="pr"]{padding-right:var(--r0)}
             &[size*="p1"]{padding:var(--r1)}
             &[size*="pt1"]{padding-top:var(--r1)}
             &[size*="pb1"]{padding-bottom:var(--r1)}
